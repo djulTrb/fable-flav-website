@@ -2,11 +2,12 @@ import React from "react";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import { BsArrowUpRight } from "react-icons/bs";
 
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { BsX } from "react-icons/bs";
 import DarkModeToggleBtn from "./DarkModeToggleBtn";
 
 const Drawer = ({ drawerRef }) => {
+  const navigate = useNavigate();
   return (
     <nav ref={drawerRef} className="drawer backdrop-blur-md">
       {" "}
